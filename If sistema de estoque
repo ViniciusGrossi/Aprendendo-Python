@@ -1,0 +1,16 @@
+produto = input('Nome do produto ')
+categoria = input('Qual é a categoria? ')
+qtde = int(input('Qual é a quantidade de produtos? '))
+
+if produto and categoria and qtde:
+  if categoria == 'bebidas':
+    if qtde < 75:
+      print('Solicitar {} à equipe de compras, temos apenas {} unidades em estoque'.format(produto,qtde)) 
+  if categoria == 'alimentos':
+    if qtde < 50:
+      print('Solicitar {} à equipe de compras, temos apenas {} unidades em estoque'.format(produto,qtde))
+  if categoria == 'limpeza':
+    if qtde < 30:
+      print('Solicitar {} à equipe de compras, temos apenas {} unidades em estoque'.format(produto,qtde))
+else:
+  print('Seu texto está vazio, preencha adequadamente')

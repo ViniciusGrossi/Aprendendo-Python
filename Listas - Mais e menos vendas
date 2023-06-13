@@ -1,0 +1,16 @@
+meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
+vendas_1sem = [25000, 29000, 22200, 17750, 15870, 19900]
+vendas_2sem = [19850, 20120, 17540, 15555, 49051, 9650]
+
+vendas_totais = vendas_1sem + vendas_2sem
+
+mais_vendido = max(vendas_totais)
+menos_vendido = min(vendas_totais)
+
+i = vendas_totais.index(mais_vendido)
+melhor_mes = meses[i]
+print(melhor_mes)
+
+i = vendas_totais.index(menos_vendido)
+pior_mes = meses[i]
+print(pior_mes)

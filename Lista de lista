@@ -1,0 +1,29 @@
+produtos = ['computador', 'livro', 'tablet', 'celular', 'tv', 'ar condicionado', 'alexa', 'máquina de café', 'kindle']
+
+#cada item da lista dos produtos corresponde a quantidade de vendas no mês e preço, nessa ordem
+produtos_ecommerce = [
+    [10000, 2500],
+    [50000, 40],
+    [7000, 1200],
+    [20000, 1500],
+    [5800, 1300],
+    [7200, 2500],
+    [200, 800],
+    [3300, 700],
+    [1900, 400]
+]
+if 'livro' in produtos:
+  i_livro = produtos.index('livro')
+  livro_valor = produtos_ecommerce[i_livro]
+  livro_valor = livro_valor[1] * 1.1
+  print(livro_valor)
+qtde_anterior1 = produtos_ecommerce[1][0]
+qtde_anterior2 = produtos_ecommerce[1][1]
+qtde_anterior = qtde_anterior1 * qtde_anterior2
+print(qtde_anterior)
+qtde_atual = qtde_anterior1 * livro_valor
+print(qtde_atual)
+valor_final = qtde_atual - qtde_anterior
+print('A loja terá que pagar {} de imposto'.format(valor_final))
+
+  
